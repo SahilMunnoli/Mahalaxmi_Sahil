@@ -112,8 +112,9 @@ public class ReportUtils extends DriverScript{
 					}else {
 						test.log(LogStatus.PASS, resultDescription);
 					}
-					default:
-						System.out.println("Invalid result status '"+status+"'");
+					break;
+				default:
+					System.out.println("Invalid result status '"+status+"'");
 			}
 		}catch(Exception e) {
 			System.out.println("Exception in 'writeResult()' method. " + e);
